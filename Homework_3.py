@@ -2,13 +2,13 @@ print('\n\nEXERCISE 3.1\n')
 
 cat = 'Kuskus'
 for i in range(len(cat)):
-    print(f'+---', end='')
+    print('+---', end='')
 print('+')
 for i in range(len(cat)):
     print(f'| {cat[i]} ', end='')
 print('|')
 for i in range(len(cat)):
-    print(f'+---', end='')
+    print('+---', end='')
 print('+')
 
 
@@ -31,7 +31,7 @@ for x in range(1,41):
     elif x % 5 != 0 and x % 7 != 0:
         print(f'{x} is not important')
     else:
-        print('error')
+        print('check the syntax')
 
 
 print('\n\twhile loop\n')
