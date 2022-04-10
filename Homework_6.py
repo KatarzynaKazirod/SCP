@@ -58,7 +58,6 @@ print("Exemplary tests passed")
 
 v = Vector(5, 6, 7)
 w = Vector(-3, 2, 4)
-import math
 assert v != w
 assert v + w == Vector(2, 8, 11)
 assert v - w == Vector(8, 4, 3)
