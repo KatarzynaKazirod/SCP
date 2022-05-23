@@ -1,0 +1,111 @@
+EXERCISE 10.1
+> pip install VirtualEnv
+
+Collecting VirtualEnv
+  Downloading virtualenv-20.14.1-py2.py3-none-any.whl (8.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 689.7 kB/s eta 0:00:00
+Collecting platformdirs<3,>=2
+  Downloading platformdirs-2.5.2-py3-none-any.whl (14 kB)
+Collecting filelock<4,>=3.2
+Requirement already satisfied: six<2,>=1.9.0 in c:\python\python310\lib\site-packages (from VirtualEnv) (1.16.0)
+  Downloading distlib-0.3.4-py2.py3-none-any.whl (461 kB)
+Installing collected packages: distlib, platformdirs, filelock, VirtualEnv
+Successfully installed VirtualEnv-20.14.1 distlib-0.3.4 filelock-3.7.0 platformdirs-2.5.2
+
+> pip install VirtualEnvWrapper-win
+
+Collecting VirtualEnvWrapper-win
+  Downloading virtualenvwrapper_win-1.2.7-py3-none-any.whl (18 kB)
+Requirement already satisfied: virtualenv in c:\python\python310\lib\site-packages (from VirtualEnvWrapper-win) (20.14.1)
+Requirement already satisfied: platformdirs<3,>=2 in c:\python\python310\lib\site-packages (from virtualenv->VirtualEnvWrapper-win) (2.5.2)
+Requirement already satisfied: distlib<1,>=0.3.1 in c:\python\python310\lib\site-packages (from virtualenv->VirtualEnvWrapper-win) (0.3.4)
+Requirement already satisfied: six<2,>=1.9.0 in c:\python\python310\lib\site-packages (from virtualenv->VirtualEnvWrapper-win) (1.16.0)
+Requirement already satisfied: filelock<4,>=3.2 in c:\python\python310\lib\site-packages (from virtualenv->VirtualEnvWrapper-win) (3.7.0)
+Installing collected packages: VirtualEnvWrapper-win
+Successfully installed VirtualEnvWrapper-win-1.2.7
+
+>virtualenv --version
+
+virtualenv 20.14.1 from C:\Python\Python310\lib\site-packages\virtualenv\__init__.py
+
+>mkdir testvenv
+
+    Directory: C:\Users\Kasia
+>cd .\testvenv\
+
+>virtualenv DIR
+created virtual environment CPython3.10.2.final.0-64 in 5057ms
+  creator CPython3Windows(dest=C:\Users\Kasia\testvenv\DIR, clear=False, no_vcs_ignore=False, global=False)
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+>.\DIR\Scripts\activate
+>pip list
+pip        22.0.4
+setuptools 62.1.0
+wheel      0.37.1
+
+> pip install numpy 
+Collecting numpy
+  Downloading numpy-1.22.4-cp310-cp310-win_amd64.whl (14.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.7/14.7 MB 3.8 MB/s eta 0:00:00
+Installing collected packages: numpy
+Successfully installed numpy-1.22.4
+
+>pip install matplotlib
+Collecting matplotlib
+  Downloading matplotlib-3.5.2-cp310-cp310-win_amd64.whl (7.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.2/7.2 MB 807.8 kB/s eta 0:00:00
+Collecting cycler>=0.10
+  Using cached cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting python-dateutil>=2.7
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting kiwisolver>=1.0.1
+  Using cached kiwisolver-1.4.2-cp310-cp310-win_amd64.whl (55 kB)
+Requirement already satisfied: numpy>=1.17 in c:\users\kasia\testvenv\dir\lib\site-packages (from matplotlib) (1.22.4)
+  Downloading Pillow-9.1.1-cp310-cp310-win_amd64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 1.2 MB/s eta 0:00:00
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.33.3-py3-none-any.whl (930 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 930.9/930.9 KB 1.9 MB/s eta 0:00:00
+Collecting packaging>=20.0
+  Using cached packaging-21.3-py3-none-any.whl (40 kB)
+Collecting pyparsing>=2.2.1
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 KB 5.9 MB/s eta 0:00:00
+Collecting six>=1.5
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, pyparsing, pillow, kiwisolver, fonttools, cycler, python-dateutil, packaging, matplotlib
+Successfully installed cycler-0.11.0 fonttools-4.33.3 kiwisolver-1.4.2 matplotlib-3.5.2 packaging-21.3 pillow-9.1.1 pyparsing-3.0.9 python-dateutil-2.8.2 six-1.16.0
+
+>pip install pandas
+Collecting pandas
+  Using cached pandas-1.4.2-cp310-cp310-win_amd64.whl (10.6 MB)
+Collecting pytz>=2020.1
+  Using cached pytz-2022.1-py2.py3-none-any.whl (503 kB)
+Requirement already satisfied: numpy>=1.21.0 in c:\users\kasia\testvenv\dir\lib\site-packages (from pandas) (1.22.4)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\kasia\testvenv\dir\lib\site-packages (from pandas) (2.8.2)
+
+>pip list
+
+Package         Version
+--------------- -------
+cycler          0.11.0
+fonttools       4.33.3
+kiwisolver      1.4.2
+matplotlib      3.5.2
+numpy           1.22.4
+packaging       21.3
+pandas          1.4.2
+Pillow          9.1.1
+pip             22.0.4
+pyparsing       3.0.9
+python-dateutil 2.8.2
+pytz            2022.1
+setuptools      62.1.0
+six             1.16.0
+wheel           0.37.1
+
+>deactivate
+
+
+
